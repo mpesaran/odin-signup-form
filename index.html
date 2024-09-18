@@ -8,42 +8,79 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+    <script src="main.js" defer></script>
     <title>Wanderlust Travel Agency</title>
 </head>
 
 <body>
-    <div class="content">
-        <section class="background-container">
-            <div class="logo-container">
-                <img src="./assets/odin-lined.png" alt="odin logo" class="logo">
-                <p>ODIN</p>
-            </div>
-        </section>
-        <section class="text-container">
-            <div class="intro">
-                <h2>Join Wanderlust Today!</h2>
-                <p>
-                    Discover a world of adventure and relaxation with our exclusive travel deals and personalized
-                    itineraries.
-                    Whether you dream of exploring exotic destinations, planning the perfect getaway, or embarking
-                    on a
-                    new
-                    adventure, we're here to make it happen.
-                </p>
+    <div class="form-container">
+        <div class="image-section">
+            <img src="./assets/bg.jpg" alt="">
+            <!-- <img src="./assets/odin-lined.png" alt="odin logo" class="logo"> -->
 
-                <p>Sign up now and start your journey with us. Simply fill out the form below to create your account
-                    and
-                    unlock a world of travel possibilities.
-                </p>
+            <div class="logo-overlay">
+                <div>ODIN</div>
+                <img src="./assets/odin-lined.png" alt="" class="logo">
             </div>
-            <div class="signup-form">
-                <form action="">
-                    <legend>Let's do this!</legend>
-                    <label for="name"></label>
-                    <input type="text">
-                </form>
-            </div>
-        </section>
+        </div>
+        <div class="form-section">
+            <h2>Join Wanderlust Today!</h2>
+            <p>
+                Discover a world of adventure and relaxation with our exclusive travel deals and personalized
+                itineraries.
+                Whether you dream of exploring exotic destinations, planning the perfect getaway, or embarking
+                on a
+                new
+                adventure, we're here to make it happen.
+            </p>
+
+            <p>Sign up now and start your journey with us. Simply fill out the form below to create your account
+                and
+                unlock a world of travel possibilities.
+            </p>
+
+            <form action="" class="sign-up-form">
+
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="name">FIRST NAME</label>
+                        <input type="text" id="name">
+                    </div>
+                    <div class="form-field">
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" id="last-name">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="form-field">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="text" id="phone" name="phone">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password" name="password">
+                        <div id="error-password"></div>
+                    </div>
+                    <div class="form-field">
+                        <label for="confirm-password">CONFIRM PASSWORD</label>
+                        <input type="password" name="confirm-password" id="confirm-password" minlength="8">
+                        <div id="error-confirm-password"></div>
+                    </div>
+                </div>
+                <div class="account">
+                    <button type="submit" class="submit-button">Create Account</button>
+                    <p>Already have an account? <a href="#">Log in</a></p>
+                </div>
+
+            </form>
+        </div>
 
     </div>
     <!-- <footer>
